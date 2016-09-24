@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/article-one',function(req,res){        //adding url handling fn//
-    res.send('article one requested and served here');//article one page is requested here//
+     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));//article one page is requested here//
 });
 
 app.get('/article-two',function(req,res){
